@@ -128,9 +128,30 @@ footer{
     margin-right: 200px;
     height: fit-content;
 }
+.Tortas{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin-left: 200px;
+    margin-right: 200px;
+    height: fit-content;
+}
+.Promos{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin-left: 200px;
+    margin-right: 200px;
+    height: fit-content;
+}
 .cake h2{
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 20px;
     
 }
 .box{
@@ -145,10 +166,10 @@ footer{
 .box_img{
     
         background-repeat: no-repeat;   
-        background-size: contain;
+        background-size: cover;
        height: 210px;
        width: 250px;
-        background-image: url("https://d2j6dbq0eux0bg.cloudfront.net/images/16830190/1498589015.jpg");
+        /*background-image: url("https://d2j6dbq0eux0bg.cloudfront.net/images/16830190/1498589015.jpg");*/
     
 }
 
@@ -164,7 +185,8 @@ footer{
 .about_us{
     margin-top: 30px;
     border-top: 3px solid #ccc5c5;
-    height: 100vh;
+    height: fit-content;
+    padding-bottom: 50px;
 }
 .about_us h1{
    
@@ -177,6 +199,7 @@ footer{
     display: flex;
     flex-direction: row; 
     align-content: center;
+    justify-content: center;
     margin-left: 350px;
     margin-right: 300px;
     gap: 20px;
@@ -186,7 +209,6 @@ footer{
     font-size: 18px;
     line-height: 1.8em;
     font-weight: 400;
-   
     padding: 0 8px;
     word-wrap: break-word;
 }
@@ -194,6 +216,10 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: stretch;
+}
+.first-p{
+    display: flex;
+    flex-direction: row;
 }
 
 .profile{
@@ -250,3 +276,84 @@ footer{
   background-color: #000;
   border: 1px solid #000;
 }
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .main{
+        height: 100vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    .image{
+        display: none;
+    }
+    .logo{
+       
+        background-repeat: no-repeat;   
+        background-size: contain;
+       height: 200px;
+       width: 180px;
+        background-image: url("https://d2j6dbq0eux0bg.cloudfront.net/images/16830190/1498589015.jpg");
+    }
+    .right h1{
+        text-align: center;
+        font-size: 80px;
+        font-family: 'Dosis' ;
+        color: rgb(255, 156, 161)
+    }
+    .right h1 {
+        
+         font-size: 32px; 
+    }
+    .right{
+        margin-top: 20%;
+    }
+    .box{
+       
+        width: 150px !important;
+      
+    }
+    .box_img{ 
+           width: 150px !important;     
+    }
+
+    .cupcakes{
+       
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    
+    }
+    .Tortas{
+        
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+       
+    }
+    .Promos{
+    
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        
+    }
+
+    .social_media{
+        margin-left: 135px !important;
+        margin-right: 30px !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+
+    
+
+    .info{
+       flex-direction: column-reverse !important;
+        margin-left: 30px !important;
+        margin-right: 30px !important;
+        
+    }
+
+  }
